@@ -17,6 +17,19 @@ class Person
     private string $username;
 
     /**
+     * @param string $firstName
+     * @param string $lastName
+     * @param string $username
+     */
+    public function __construct(string $firstName, string $lastName, string $username)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->username = $username;
+    }
+
+
+    /**
      * @return int
      */
     public function getId(): int
